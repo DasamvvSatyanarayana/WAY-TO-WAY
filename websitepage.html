@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Platform - Multi-Section</title>
+   
+    <style>
+     body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(courier.jpg);
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            margin-top: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .nav-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 5px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+
+      
+        .slide {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Exchange Platform</h1>
+
+  
+    <div class="nav-buttons">
+        <a href="#user-details" class="nav-button">User Details</a>
+        <a href="#trip-coordination" class="nav-button">Trip Coordination</a>
+        <a href="#goods-exchange" class="nav-button">Goods Exchange</a>
+    </div>
+
+    
+    <div id="user-details" class="slide">
+        <h2>User Details</h2>
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="Enter your location">
+        </div>
+        <div class="form-group">
+            <label for="needs">Needs</label>
+            <textarea id="needs" rows="4" placeholder="Specify your needs here..."></textarea>
+        </div>
+        <button type="button">Submit Details</button>
+        <p><em>Your details have been submitted.</em></p>
+    </div>
+
+    
+    <div id="trip-coordination" class="slide">
+        <h2>Trip Coordination</h2>
+        <div class="form-group">
+            <label for="tripLocation">Trip Location</label>
+            <input type="text" id="tripLocation" placeholder="Enter trip location">
+        </div>
+        <div class="form-group">
+            <label for="tripDate">Trip Date</label>
+            <input type="date" id="tripDate">
+        </div>
+        <div class="form-group">
+            <label for="tripPurpose">Purpose of Trip</label>
+            <textarea id="tripPurpose" rows="3" placeholder="Describe the purpose of the trip..."></textarea>
+        </div>
+        <button type="button">Submit Trip</button>
+        <p><em>Your trip has been recorded.</em></p>
+    </div>
+
+  
+    <div id="goods-exchange" class="slide">
+        <h2>Goods Exchange</h2>
+        <div class="form-group">
+            <label for="itemName">Item Name</label>
+            <input type="text" id="itemName" placeholder="Enter item name">
+        </div>
+        <div class="form-group">
+            <label for="itemDescription">Item Description</label>
+            <textarea id="itemDescription" rows="3" placeholder="Describe the item..."></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exchangeType">Exchange Type</label>
+            <select id="exchangeType">
+                <option value="Give">Give</option>
+                <option value="Receive">Receive</option>
+            </select>
+        </div>
+        <button type="button">Submit Item</button>
+        <p><em>Your item has been submitted.</em></p>
+    </div>
+</div>
+
+</body>
+</html>
